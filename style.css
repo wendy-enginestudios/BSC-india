@@ -250,7 +250,7 @@ textarea {
     src: url("/app/fonts/Delivery-CondensedBlack.eot");
     src: url("/app/fonts/Delivery-CondensedBlack.eot?#iefix") format("embedded-opentype"), url("/app/fonts/Delivery-CondensedBlack.woff") format("woff"), url("/app/fonts/Delivery-CondensedBlack.ttf") format("truetype"), url("/app/fonts/Delivery-CondensedBlack.svg#svgFontName") format("svg")
 }
-/*
+
 @font-face {
     font-family: dhlicons;
     src: url("app/fonts/iconfont.woff") format("woff");
@@ -274,7 +274,7 @@ textarea {
     font-family: "Delivery-CondensedBlack";
     src: url("app/fonts/Delivery-CondensedBlack.eot");
     src: url("app/fonts/Delivery-CondensedBlack.eot?#iefix") format("embedded-opentype"), url("app/fonts/Delivery-CondensedBlack.woff") format("woff"), url("app/fonts/Delivery-CondensedBlack.ttf") format("truetype"), url("app/fonts/Delivery-CondensedBlack.svg#svgFontName") format("svg")
-}*/
+}
 
 * {
     font-family: "Delivery-Regular", sans-serif;
@@ -617,7 +617,7 @@ video {
 }
 
 .form form input.uk-input {
-    background: #F2F2F2;
+    background: #FFFFFF;
     border: none;
     max-height: 35px;
     font-family: "Delivery-Regular", sans-serif;
@@ -628,7 +628,7 @@ video {
 }
 
 .form form input.uk-input:focus {
-    background: #F2F2F2;
+    background: #FFFFFF;
     border: none;
     color: #000;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
@@ -636,7 +636,7 @@ video {
 }
 
 .form form select {
-    background: #F2F2F2;
+    background: #FFFFFF;
     border: none;
     max-height: 35px;
     font-family: "Delivery-Regular", sans-serif;
@@ -646,7 +646,7 @@ video {
 }
 
 .form form select:focus {
-    background: #F2F2F2;
+    background: #FFFFFF;
     border: none;
     color: #000;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
@@ -665,7 +665,7 @@ video {
 }
 
 .form form .select-wrapper button {
-    background: #F2F2F2;
+    background: #FFFFFF;
     width: 100%;
     display: block;
     border: none;
@@ -720,7 +720,7 @@ video {
 }
 
 .form form textarea.comments-box {
-    background: #F2F2F2;
+    background: #FFFFFF;
     border: none;
     min-height: 200px;
     resize: none;
@@ -732,7 +732,7 @@ video {
 }
 
 .form form textarea.comments-box:focus {
-    background: #F2F2F2;
+    background: #FFFFFF;
     box-shadow: 0 0 0 .2rem #d40511;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
@@ -926,9 +926,7 @@ video {
 }
 
 @media (max-width: 960px) {
-    .card-wrapper {
-        margin-bottom: 30px !important
-    }
+
 }
 
 .card-btn {
@@ -1081,3 +1079,94 @@ video {
     }
 }
 
+/** Layout Fixes **/
+
+.read-now-btn {
+    color: #fff;
+    font-size: 1.1em;
+    background: #D40511;
+    margin: auto;
+    text-align: center;
+    padding: 7px 20px;
+    border-radius: 6px;
+    border-color: transparent;
+    cursor: pointer;
+    font-family: "Delivery-Bold", sans-serif;
+}
+
+.read-now-btn:hover {
+    color: #fff;
+    background: #EB131E;
+    text-decoration: none;
+    transition: all .15s ease-in
+}
+
+.larger-text{
+    font-size: 3em;
+}
+
+.condensed-text{
+    font-family: "Delivery-CondensedBlack", sans-serif;
+}
+
+.h-accordion{
+    overflow: hidden;
+}
+.h-accordion .h-accordion-item{
+    transition: all 200ms ease;
+}
+.h-accordion .h-accordion-item .title{
+    width: 150px;
+}
+.h-accordion .h-accordion-item p{
+    opacity: 0;
+    width: 550px;
+}
+.h-accordion:hover .h-accordion-item{
+    width: 10%;
+}
+.h-accordion:hover .h-accordion-item .bottom-third{
+    top: 10%;
+}
+.h-accordion:hover .h-accordion-item .title{
+    transform:translate3d(-48%,100px,0) rotate(-90deg);
+    width: 300px;
+}
+.h-accordion:hover .h-accordion-item:hover{
+    width: 50%;
+    -webkit-transform: translateX(0);
+      transform: translateX(0);
+}
+.h-accordion:hover .h-accordion-item:hover .title{
+   transform:rotate(360deg);
+}
+.h-accordion:hover .h-accordion-item:hover p{
+    opacity: 1;
+}
+.h-accordion:hover .h-accordion-item:hover .expand{
+    opacity: 0;
+}
+.h-accordion:hover .h-accordion-item:hover .bottom-third{
+    top: 50%;
+}
+
+.bottom-third{
+    top: 60%;
+    left: 0;
+    position: absolute;
+}
+
+a, a:hover{
+    color: #D40511;
+}
+
+#supply-chain .title{
+    text-transform: uppercase;
+    font-family: "Delivery-CondensedBlack", sans-serif;
+    font-size: 23px;
+    color: #D40511;
+    margin-bottom: 0;
+}
+#supply-chain a{
+    color: #D40511
+}
