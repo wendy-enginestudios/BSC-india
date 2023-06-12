@@ -925,8 +925,28 @@ video {
     width: 100%
 }
 
-@media (max-width: 960px) {
+@media (min-width: 600px) and (max-width: 960px) {
+    .card-wrapper {
+        margin-bottom: 30px;
+    }
+    .card-wrapper-middle {
+        margin-bottom: 0px;
+    }
+    .card-wrapper-last {
+        margin-bottom: 0px;
+    }
+}
 
+@media (max-width: 600px) {
+    .card-wrapper {
+        margin-bottom: 30px;
+    }
+    .card-wrapper-middle {
+        margin-bottom: 30px;
+    }
+    .card-wrapper-last {
+        margin-bottom: 0px;
+    }
 }
 
 .card-btn {
@@ -1061,26 +1081,6 @@ video {
     padding-left: 30px
 }
 
-@media(max-width: 1023px) {
-    .container {
-        max-width: 768px
-    }
-}
-
-@media(max-width: 767px) {
-    .container {
-        max-width: 568px
-    }
-}
-
-@media(max-width: 567px) {
-    .container {
-        max-width: 320px
-    }
-}
-
-/** Layout Fixes **/
-
 .read-now-btn {
     color: #fff;
     font-size: 1.1em;
@@ -1163,10 +1163,86 @@ a, a:hover{
 #supply-chain .title{
     text-transform: uppercase;
     font-family: "Delivery-CondensedBlack", sans-serif;
-    font-size: 23px;
+    font-size: 26px;
     color: #D40511;
     margin-bottom: 0;
 }
 #supply-chain a{
     color: #D40511
+}
+
+/** carousel **/
+.tight-description-text {
+  line-height: 20px;
+}
+
+/** Rigor section **/
+.uk-open>.uk-accordion-title::before{
+    background-image: url(images/chevron-up.png);
+}
+.uk-accordion-title::before{
+    background-image: url(images/chevron-down.png);
+}
+
+.remove-padding-left {
+    padding-left: 0;
+}
+
+.banner-text .title{
+    font-family: "Delivery-CondensedBlack", sans-serif;
+    font-size: 2.2em;
+    line-height: 1.1;
+    color:#D40511;
+}
+
+.banner-width {
+    width: 450px;
+}
+
+@media (min-width:768px) and (max-width: 1023px) {
+    .container {
+        max-width: 768px
+    }
+    #supply-chain .title {
+        font-size: 21px;
+    }
+    .banner-width {
+        width: 350px;
+    }
+    .banner-text .title {
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 767px) {
+    .container {
+        max-width: 568px
+    }
+    #supply-chain .title {
+        font-size: 24px;
+    }
+    .banner-width {
+        width: 320px;
+    }
+    .banner-text .title {
+        font-size: 28px;
+    }
+    /** Focus section **/
+    .title-small-text {
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 567px) {
+    .container {
+        max-width: 320px
+    }
+    /** Focus section **/
+    .title-small-text {
+        font-size: 25px;
+    }
+    .remove-padding-on-mobile {
+        padding: 0;
+        padding-bottom: 20px;
+    }
 }
