@@ -1109,6 +1109,7 @@ video {
     font-family: "Delivery-CondensedBlack", sans-serif;
 }
 
+/** Rigor section **/
 .h-accordion{
     overflow: hidden;
 }
@@ -1149,6 +1150,18 @@ video {
 .h-accordion:hover .h-accordion-item:hover .bottom-third{
     top: 50%;
 }
+.uk-accordion-title{
+    border-top: #000 1px solid;
+}
+.uk-accordion-content{
+    margin-top:0;
+}
+.uk-open>.uk-accordion-title::before{
+    background-image: url(images/chevron-up.png);
+}
+.uk-accordion-title::before{
+    background-image: url(images/chevron-down.png);
+}
 
 .bottom-third{
     top: 60%;
@@ -1174,14 +1187,6 @@ a, a:hover{
 /** carousel **/
 .tight-description-text {
   line-height: 20px;
-}
-
-/** Rigor section **/
-.uk-open>.uk-accordion-title::before{
-    background-image: url(images/chevron-up.png);
-}
-.uk-accordion-title::before{
-    background-image: url(images/chevron-down.png);
 }
 
 .remove-padding-left {
@@ -1239,10 +1244,23 @@ a, a:hover{
     }
     /** Focus section **/
     .title-small-text {
-        font-size: 25px;
+        font-size: 23px;
     }
     .remove-padding-on-mobile {
         padding: 0;
-        padding-bottom: 20px;
+    }
+    .small-padding-on-mobile {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media(max-width: 290px) {
+    /** Focus section **/
+    .title-small-text {
+        font-size: 19px;
+    } 
+    .small-title-on-moblie {
+        font-size: 28px;
     }
 }
