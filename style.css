@@ -938,6 +938,7 @@ video {
     }
 }
 
+/** Discover More section **/
 @media (max-width: 600px) {
     .card-wrapper {
         margin-bottom: 30px;
@@ -945,6 +946,7 @@ video {
     .card-wrapper-middle {
         margin-bottom: 30px;
     }
+    /** For the last card - prevent the card from expanding infinite on ipad **/
     .card-wrapper-last {
         margin-bottom: 0px;
     }
@@ -1291,7 +1293,6 @@ a, a:hover{
 }
 
 @media(max-width: 290px) {
-    /** Focus section **/
     .title-small-text {
         font-size: 19px;
     } 
