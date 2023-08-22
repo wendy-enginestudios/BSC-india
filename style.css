@@ -334,9 +334,9 @@ h3 {
 h4 {
     font-family: "Delivery-CondensedBlack", sans-serif;
     display: block;
-    font-size: 1.12em;
+    font-size: 1.06em;
     color: #d40511;
-    line-height: 1.12em
+    line-height: 1.08em
 }
 
 p {
@@ -412,7 +412,8 @@ p {
     color:#fff!important;
 }
 .bg-yellow-solid {
-    background-color:#FFCB00;
+    /* background-color:#FFCB00; */
+    background: linear-gradient(0deg, rgba(255,239,177,1) 0%, rgba(255,204,0,1) 70%, rgba(255,204,0,1) 100%);
 }
 .bg-yellow {
     background: -webkit-linear-gradient(top, #fc0 0%, #fc0 30%, #ffe57f 79%, #fff0b2 100%);
@@ -1117,7 +1118,7 @@ video {
     transition: all 200ms ease;
 }
 .h-accordion .h-accordion-item .title{
-    width: 150px;
+    width: 140px;
 }
 .h-accordion .h-accordion-item p{
     opacity: 0;
@@ -1152,6 +1153,7 @@ video {
 }
 .uk-accordion-title{
     border-top: #000 1px solid;
+    margin: 0 0 10px;
 }
 .uk-accordion-content{
     margin-top:0;
@@ -1189,6 +1191,10 @@ a, a:hover{
   line-height: 20px;
 }
 
+*+p {
+    margin-top:0;
+}
+
 .remove-padding-left {
     padding-left: 0;
 }
@@ -1198,11 +1204,31 @@ a, a:hover{
     font-size: 2.2em;
     line-height: 1.1;
     color:#D40511;
+    margin-bottom: 2rem;
 }
 
 .banner-width {
-    width: 450px;
+    width: 350px;
 }
+
+/** DHL SmarTransport Logo **/
+.smartransport-logo {
+    max-width:260px;
+    margin-top:12px;
+}
+
+/** Advantages Icon **/
+.icon-adv {
+    padding-bottom:10px;
+}
+
+
+@media (min-width: 1200px) {
+    .uk-padding-large {
+    padding: 160px;
+    }
+}
+
 
 @media (min-width:768px) and (max-width: 1023px) {
     .container {
@@ -1219,6 +1245,7 @@ a, a:hover{
     }
 }
 
+
 @media(max-width: 767px) {
     .container {
         max-width: 568px
@@ -1230,11 +1257,19 @@ a, a:hover{
         width: 320px;
     }
     .banner-text .title {
-        font-size: 28px;
+        font-size: 26px;
     }
     /** Focus section **/
     .title-small-text {
         font-size: 24px;
+    }
+
+    .uk-margin-left {
+    margin-left: 10px!important
+    }
+
+    .uk-margin-right {
+    margin-right: 10px!important;
     }
 }
 
@@ -1244,7 +1279,7 @@ a, a:hover{
     }
     /** Focus section **/
     .title-small-text {
-        font-size: 23px;
+        font-size: 26px;
     }
     .remove-padding-on-mobile {
         padding: 0;
